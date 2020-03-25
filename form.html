@@ -1,0 +1,48 @@
+
+	<html>
+	<head>
+		<title>資管營報名表</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1><center>資管營開始報名囉~</center></h1>
+		<h2> <center><font face="Consolas" size="5"><center><marquee width="200">出過國請記得自主隔離</marquee></center></font></center> </h2>
+		<center>
+	<form action="submit.php" method="POST">
+	請輸入你的名字:<input type="name=" name="name" required><br/><br/>
+	請選擇出生日期:<input type="date" name="birth" required><br/><br/>
+	請選擇性別:
+	Male<input type=radio name="gender" value="M" required>
+	Female<input type=radio name="gender" value="F" required><br/><br/>
+	請填寫你的信箱:<input type="email" name="email" required><br/><br/>
+	請填寫你的聯絡電話:<input type="phone" name="phone" required><br/><br/>
+	請填寫你的身份證字號:<input type="id" name="id" required><br/><br/>
+	請選擇居住地:北部<input type="radio" name="where" value="north" required>
+				中部<input type="radio" name="where" value="central" required>
+				南部<input type="radio" name="where" value="south" required>
+				東部<input type="radio" name="where" value="east" required>
+				離島<input type="radio" name="where" value="islands" required><br/><br/>
+	請問衣服顏色要:紅<input type="radio" name="color" value="red" required>
+					藍<input type="radio" name="color" value="blue" required>
+					黑<input type="radio" name="color" value="black" required>
+					白<input type="radio" name="color" value="white" required><br/><br/>
+	請問衣服要甚麼尺寸:XS<input type="radio" name="size" value="XS" required>
+					S<input type="radio" name="size" value="S" required>
+					M<input type="radio" name="size" value="M" required>
+					L<input type="radio" name="size" value="L" required>
+					XL<input type="radio" name="size" value="XL" required><br/><br/>
+	請問最近出過國嗎:有<input type="radio" name="choice" value="yes" required>
+					無<input type="radio" name="choice" value="no" required><br/><br/>
+	如何得知的(可複選):<select name="how[]" multiple required>
+		<option value="friend" >從朋友得知</option>
+		<option value="school" >從學校宣傳得知</option>
+		<option value="ad">從傳單海報得知</option>
+		<option value="web">從網站得知</option>
+	</select></br><br/>
+	
+	<input type="reset" value="Clear"><input type="submit" value="Send Data"><br/><br/>
+	</center>
+	</form>
+
+	</body>
+	</html>
